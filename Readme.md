@@ -2,9 +2,9 @@
 APIMacros has no dependencies. It is needed to create C libraries. It has a mechanism to detach clib(std c lib) from your project. This library is updated as needed in my other projects.
 
 ### Configure whit macros:
-- **API_(FUNCTION)**              - redef std function    \[API_COS    - cos\]
-- **API_(TYPE)**                  - redef std type        \[API_U8     - uint8_t\]
-- **API_(INCLUDE_FILE)_H**        - change std header     \[API_MATH_H - <math.h>\]
+- **API_(FUNCTION)**              - redef function        \[API_COS    - cos\]
+- **API_(TYPE)**                  - redef type            \[API_U8     - uint8_t\]
+- **API_(INCLUDE_FILE)_H**        - change header         \[API_MATH_H - <math.h>\]
 - **API_NI_(INCLUDE_FILE)_H**     - disable header        \[API_NI_STRING_H\]
 
 ### Current realized:
@@ -29,3 +29,8 @@ APIMacros has no dependencies. It is needed to create C libraries. It has a mech
 | API_MALLOC                 | malloc                     |
 | API_FREE                   | free                       |
 | API_CALLOC                 | calloc                     |
+| **__API_LIB_H__**          | **(API HEADER)**           |
+| API_LIBRARY                | HMODULE / void*            |
+| API_LOAD_LIBRARY(path)     | LoadLibraryA / dlopen      |
+| API_GET_LIB_FUNC           | GetProcAddress / dlsym     |
+| API_UNLOAD_LIBRARY         | FreeLibrary / dlclose      |
