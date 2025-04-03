@@ -4,7 +4,7 @@ APIMacros has no dependencies. It is needed to create C libraries. It has a mech
 ### Configure whit macros:
 - **API_(FUNCTION)**              - redef std function    \[API_COS    - cos\]
 - **API_(TYPE)**                  - redef std type        \[API_U8     - uint8_t\]
-- **API_(INCLUDE_FILE)_H**        - change sdt header     \[API_MATH_H - <math.h>\]
+- **API_(INCLUDE_FILE)_H**        - change std header     \[API_MATH_H - <math.h>\]
 - **API_NI_(INCLUDE_FILE)_H**     - disable header        \[API_NI_STRING_H\]
 
 ### Current realized:
