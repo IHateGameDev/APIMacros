@@ -2,7 +2,7 @@
 #define __API_MEMORYLYB_H__
 
 #ifndef API_MEMORYLIB_H
-# define API_MEMORYLIB <stdlib.h>
+# define API_MEMORYLIB_H <stdlib.h>
 #endif
 
 // FUNCTIONS
