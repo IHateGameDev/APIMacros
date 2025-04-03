@@ -10,4 +10,8 @@
 # define API_MEMSET memset
 #endif
 
+#ifndef API_STRLEN
+# define API_STRLEN strlen
+#endif
+
 #endif // !__API_STRING_CONF_H__
