@@ -20,6 +20,10 @@
 #   define API_UNLOAD_LIBRARY FreeLibrary
 # endif
 
+# ifndef API_GET_LIB_ERROR
+#   define API_GET_LIB_ERROR GetLastError
+# endif
+
 #else
 # include <dlfcn.h>
 
@@ -39,8 +43,10 @@
 #   define API_UNLOAD_LIBRARY dlclose
 # endif
 
+# ifndef API_GET_LIB_ERROR
+#   define API_GET_LIB_ERROR dlerror
+# endif
+
 #endif
-
-
 
 #endif // !__API_LIB_H__

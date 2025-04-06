@@ -14,4 +14,8 @@
 # define API_STRLEN strlen
 #endif
 
+#ifndef API_STRTOK
+# define API_STRTOK strtok
+#endif
+
 #endif // !__API_STRING_CONF_H__

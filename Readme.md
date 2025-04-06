@@ -22,6 +22,7 @@ APIMacros has no dependencies. It is needed to create C libraries. It has a mech
 | **API_STRING_H**           | **<string.h>**             |
 | API_MEMSET                 | memset                     |
 | API_STRLEN                 | strlen                     |
+| API_STRTOK                 | strtok                     |
 | **API_MATH_H**             | **<math.h>**               |
 | API_SIN                    | sin                        |
 | API_COS                    | cos                        |
@@ -35,3 +36,4 @@ APIMacros has no dependencies. It is needed to create C libraries. It has a mech
 | API_LOAD_LIBRARY(path)     | LoadLibraryA / dlopen      |
 | API_GET_LIB_FUNC           | GetProcAddress / dlsym     |
 | API_UNLOAD_LIBRARY         | FreeLibrary / dlclose      |
+| API_GET_LIB_ERROR          | GetLastError / dlerror     |
