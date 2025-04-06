@@ -1,6 +1,22 @@
 # APIMacros
 APIMacros has no dependencies. It is needed to create C libraries. It has a mechanism to detach clib(std c lib) from your project. This library is updated as needed in my other projects.
 
+## Install
+For install write in terminal:
+```bash
+mkdir build
+cd build
+cmake .. # -G Ninja
+sudo make install # ninja install
+```
+
+Or install on Windows:
+```powershell
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=path\to\project # -G Ninja
+make install # ninja install
+```
 ### Configure whit macros:
 - **API_(FUNCTION)**              - redef function        \[API_COS    - cos\]
 - **API_(TYPE)**                  - redef type            \[API_U8     - uint8_t\]
