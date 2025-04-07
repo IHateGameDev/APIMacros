@@ -35,6 +35,10 @@ make install # ninja install
 | API_U16                    | uint16_t                   |
 | API_U32                    | uint32_t                   |
 | API_U64                    | uint64_t                   |
+| **API_STDIO_H**            | **<stdint.h>**             |
+| API_PUTC                   | putc                       |
+| API_PUTS                   | puts                       |
+| API_PRINTF                 | printf                     |
 | **API_STRING_H**           | **<string.h>**             |
 | API_MEMSET                 | memset                     |
 | API_STRLEN                 | strlen                     |
