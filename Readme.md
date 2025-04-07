@@ -47,7 +47,7 @@ make install # ninja install
 | API_MALLOC                 | malloc                     |
 | API_FREE                   | free                       |
 | API_CALLOC                 | calloc                     |
-| **\_\_API_LIB_H\_\_**      | **(API HEADER)**           |
+| **\_\_API_SHARED_H\_\_**   | **(API HEADER)**           |
 | API_LIBRARY                | HMODULE / void*            |
 | API_LOAD_LIBRARY(path)     | LoadLibraryA / dlopen      |
 | API_GET_LIB_FUNC           | GetProcAddress / dlsym     |
