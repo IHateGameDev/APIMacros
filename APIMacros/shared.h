@@ -1,5 +1,5 @@
-#ifndef __API_LIB_H__
-#define __API_LIB_H__
+#ifndef __API_SHARED_H__
+#define __API_SHARED_H__
 
 #if defined(_WIN32) || defined(_WIN64)
 # include <windows.h>
@@ -49,4 +49,4 @@
 
 #endif
 
-#endif // !__API_LIB_H__
+#endif // !__API_SHARED_H__
