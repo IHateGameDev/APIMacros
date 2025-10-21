@@ -4,33 +4,38 @@
  */
 
 #ifndef API
-#ifndef API_SHARED_BUILD
-#define API_SHARED_BUILD 0
-#endif // !API_SHARED_BUILD
-
-#ifndef API_SHARED_USE
-#define API_SHARED_USE 0
-#endif // !API_SHARED_USE
 
 #if defined(_WIN32) || defined(_WIN64)
 #define API_SYM_EXP __declspec(dllexport)
 #define API_SYM_IMP __declspec(dllimport)
+
 #else
+#if defined(__has_attribute) && __has_attribute(visibility)
 #define API_SYM_EXP __attribute__((visibility("default")))
+
+#elif defined(__GNUC__) && __GNUC__ >= 4
+#define API_SYM_EXP __attribute__((visibility("default")))
+
+#else
+#define API_SYM_EXP
+#endif // __has_attribute
+
 #define API_SYM_IMP
 #endif // _WIN*
 
-#if API_SHARED_BUILD
-#define API_SHARED_LIB API_SYM_EXP
-#elif API_SHARED_USE
-#define API_SHARED_LIB API_SYM_IMP
+#if SHARED_BUILD
+#define API_SYM API_SYM_EXP
+#elif SHARED_USE
+#define API_SYM API_SYM_IMP
 #else
-#define API_SHARED_LIB
-#endif // API_SHARED_*
+#warning "Define API_SHARED_BUILD or API_SHARED_USE as appropriate"
+#define API_SYM
+#endif // SHARED_*
 
 #ifdef __cplusplus
-#define API extern "C" API_SHARED_LIB
+#define API extern "C" API_SYM
 #else
-#define API API_SHARED_LIB
+#define API API_SYM
 #endif
+
 #endif // !API

@@ -12,5 +12,5 @@ APIMacros is a macro-based header library. Here, all features are divided by the
 ## Install
 For install write in terminal:
 ```bash
-xmake install
+sodo xmake install --root
 ```
