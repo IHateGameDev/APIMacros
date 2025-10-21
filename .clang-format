@@ -1,0 +1,23 @@
+BasedOnStyle: LLVM
+ColumnLimit: 80
+IndentWidth: 2
+UseTab: Never
+PointerAlignment: Left
+
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+
+AlignOperands: AlignAfterOperator
+AlignEscapedNewlines: Right
+
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortBlocksOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+
+SpacesBeforeTrailingComments: 1
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: true
+
+SortIncludes: false
