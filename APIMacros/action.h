@@ -4,7 +4,7 @@
  */
 
 #ifndef ACTION
-#define ACTION(action)                                                         \
+  #define ACTION(action)                                                         \
   do {                                                                         \
     action                                                                     \
   } while (0)

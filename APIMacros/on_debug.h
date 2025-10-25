@@ -3,7 +3,7 @@
  * Copyright (c) 2025 IHateGameDev
  */
 #ifndef ON_DEBUG
-#ifdef DEBUG
+  #ifdef DEBUG
 #define ON_DEBUG(action)                                                       \
   do {                                                                         \
     action                                                                     \

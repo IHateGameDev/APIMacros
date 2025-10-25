@@ -6,7 +6,7 @@
 #ifndef API
 
 #if defined(_WIN32) || defined(_WIN64)
-#define API_SYM_EXP __declspec(dllexport)
+  #define API_SYM_EXP __declspec(dllexport)
 #define API_SYM_IMP __declspec(dllimport)
 
 #else

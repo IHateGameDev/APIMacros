@@ -4,7 +4,7 @@
  */
 
 #ifndef NULLPTR
-#if __cplusplus >= 201103L || __STDC_VERSION__ >= 202311L
+  #if __cplusplus >= 201103L || __STDC_VERSION__ >= 202311L
 #define NULLPTR nullptr
 #else
 #define NULLPTR 0

@@ -1,23 +1,143 @@
 BasedOnStyle: LLVM
 ColumnLimit: 80
 IndentWidth: 2
+
 UseTab: Never
+TabWidth: 2
 PointerAlignment: Left
 
-AlignConsecutiveAssignments: Consecutive
-AlignConsecutiveBitFields: Consecutive
-AlignConsecutiveDeclarations: Consecutive
+AlignAfterOpenBracket: true
+AlignArrayOfStructures: Left
+AlignConsecutiveMacros: Consecutive
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
 
-AlignOperands: AlignAfterOperator
 AlignEscapedNewlines: Right
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: Always
 
-AllowShortFunctionsOnASingleLine: InlineOnly
-AllowShortBlocksOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: false
-AllowShortCaseLabelsOnASingleLine: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowBreakBeforeNoexceptSpecifier: OnlyWithParent
+AllowShortBlocksOnASingleLine: Always
 
-SpacesBeforeTrailingComments: 1
-SpaceBeforeParens: ControlStatements
-SpaceAfterCStyleCast: true
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
 
-SortIncludes: false
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+
+AllowShortNamespacesOnASingleLine: true
+AlwaysBreakBeforeMultilineStrings: true
+BinPackLongBracedList: true
+BinPackParameters: BinPack
+
+BitFieldColonSpacing: After
+BraceWrapping:
+  Enabled: false
+BracedInitializerIndentWidth: 2
+BreakAfterAttributes: Never
+
+BreakBeforeBinaryOperators: All
+BreakBeforeInlineASMColon: OnlyMultiline
+BreakBeforeTernaryOperators: false
+BreakBinaryOperations: Never
+
+BreakFunctionDefinitionParameters: false
+BreakStringLiterals: true
+BreakTemplateDeclarations: Yes
+CompactNamespaces: true
+
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+FixNamespaceComments: true
+IncludeBlocks: Preserve
+
+IndentAccessModifiers: true
+IndentCaseBlocks: false
+IndentCaseLabels: true
+IndentExportBlock: true
+
+IndentExternBlock: Indent
+IndentGotoLabels: true
+IndentPPDirectives: BeforeHash
+IndentRequiresClause: false
+
+IndentWrappedFunctionNames: false
+IntegerLiteralSeparator:
+  Binary: 3
+  BinaryMinDigits: 9
+  Decimal: 3
+  DecimalMinDigits: 6
+  Hex: 2
+  HexMinDigits: 6
+
+JavaScriptQuotes: Double
+JavaScriptWrapImports: true
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: false
+  AtStartOfFile: false
+
+KeepFormFeed: true
+LineEnding: LF
+MainIncludeChar: Any
+MaxEmptyLinesToKeep: 1
+
+NamespaceIndentation: All
+NumericLiteralCase:
+  ExponentLetter: Upper
+  HexDigit: Upper
+  Prefix: Lower
+  Suffix: Lower
+
+PPIndentWidth: -1
+PackConstructorInitializers: CurrentLine
+QualifierAlignment: Right
+ReferenceAlignment: Right
+
+ReflowComments: Always
+RemoveEmptyLinesInUnwrappedLines: true
+RemoveParentheses: ReturnStatement
+RequiresExpressionIndentation: OuterScope
+
+## maybe changed
+SeparateDefinitionBlocks: Always
+
+SkipMacroDefinitionBody: false
+################
+
+ShortNamespaceLines: 16
+SortUsingDeclarations: Lexicographic
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+
+SpaceAfterOperatorKeyword: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeJsonColon: false
+
+SpaceBeforeParens: ControlStatementsExceptControlMacros
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBraces: Never
+
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: Never
+SpacesInContainerLiterals: true
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+
+SpacesInSquareBrackets: false
+TableGenBreakInsideDAGArg: BreakAll
+

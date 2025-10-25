@@ -4,7 +4,7 @@
  */
 
 #ifndef API_VERSION_H
-#define API_VERSION_H
+  #define API_VERSION_H
 
 #define API_VERSION_PREFIX "r"
 #define API_VERSION_MAJOR 1
