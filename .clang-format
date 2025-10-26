@@ -11,6 +11,10 @@ AlignArrayOfStructures: Left
 AlignConsecutiveMacros: Consecutive
 AlignConsecutiveShortCaseStatements:
   Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseArrows: true
+  AlignCaseColons: false
 
 AlignEscapedNewlines: Right
 AlignOperands: AlignAfterOperator
@@ -18,7 +22,7 @@ AlignTrailingComments: Always
 
 AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowBreakBeforeNoexceptSpecifier: OnlyWithParent
+AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
 AllowShortBlocksOnASingleLine: Always
 
 AllowShortCaseExpressionOnASingleLine: true
@@ -37,8 +41,7 @@ BinPackLongBracedList: true
 BinPackParameters: BinPack
 
 BitFieldColonSpacing: After
-BraceWrapping:
-  Enabled: false
+BreakBeforeBraces: Attach
 BracedInitializerIndentWidth: 2
 BreakAfterAttributes: Never
 
@@ -89,11 +92,12 @@ MainIncludeChar: Any
 MaxEmptyLinesToKeep: 1
 
 NamespaceIndentation: All
-NumericLiteralCase:
-  ExponentLetter: Upper
-  HexDigit: Upper
-  Prefix: Lower
-  Suffix: Lower
+# in 22
+#NumericLiteralCase:
+#  ExponentLetter: Upper
+#  HexDigit: Upper
+#  Prefix: Lower
+#  Suffix: Lower
 
 PPIndentWidth: -1
 PackConstructorInitializers: CurrentLine
@@ -129,9 +133,8 @@ SpaceBeforeJsonColon: false
 SpaceBeforeParens: ControlStatementsExceptControlMacros
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
-SpaceInEmptyBraces: Never
-
 SpacesBeforeTrailingComments: 2
+
 SpacesInAngles: Never
 SpacesInContainerLiterals: true
 SpacesInLineCommentPrefix:

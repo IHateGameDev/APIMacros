@@ -4,8 +4,6 @@
  */
 
 #ifndef ACTION
-  #define ACTION(action)                                                         \
-  do {                                                                         \
-    action                                                                     \
-  } while (0)
-#endif // !ACTION
+  #define ACTION(action)                                                       \
+    do { action } while (0)
+#endif  // !ACTION
